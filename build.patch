@@ -1,0 +1,15 @@
+diff -purN F-Engrave-1.66_src.org/Makefile F-Engrave-1.66_src/Makefile
+--- F-Engrave-1.66_src.org/Makefile	1970-01-01 00:00:00.000000000 +0000
++++ F-Engrave-1.66_src/Makefile	2018-11-28 10:35:06.399910974 +0000
+@@ -0,0 +1,10 @@
++all: ttf2cxf_stream
++
++ttf2cxf_stream:
++	g++ -o ttf2cxf_stream TTF2CXF_STREAM/ttf2cxf_stream.cpp -lm -I/usr/include/freetype2 -lfreetype
++
++
++install:
++	mkdir -p $(DESTDIR)/usr/bin
++	cp ttf2cxf_stream $(DESTDIR)/usr/bin
++	cp f-engrave.py $(DESTDIR)/usr/bin
+\ No newline at end of file
