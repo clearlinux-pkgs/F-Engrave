@@ -4,7 +4,7 @@
 #
 Name     : F-Engrave
 Version  : 1.66
-Release  : 1
+Release  : 2
 URL      : http://www.scorchworks.com/Fengrave/F-Engrave-1.66_src.zip
 Source0  : http://www.scorchworks.com/Fengrave/F-Engrave-1.66_src.zip
 Summary  : No detailed summary available
@@ -34,11 +34,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1543401681
+export SOURCE_DATE_EPOCH=1543732933
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1543401681
+export SOURCE_DATE_EPOCH=1543732933
 rm -rf %{buildroot}
 %make_install
 
@@ -47,5 +47,5 @@ rm -rf %{buildroot}
 
 %files bin
 %defattr(-,root,root,-)
-/usr/bin/f-engrave.py
+/usr/bin/f-engrave
 /usr/bin/ttf2cxf_stream
