@@ -4,7 +4,7 @@
 #
 Name     : F-Engrave
 Version  : 1.66
-Release  : 3
+Release  : 4
 URL      : http://www.scorchworks.com/Fengrave/F-Engrave-1.66_src.zip
 Source0  : http://www.scorchworks.com/Fengrave/F-Engrave-1.66_src.zip
 Summary  : No detailed summary available
